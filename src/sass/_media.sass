@@ -12,6 +12,14 @@
             align-items: flex-start
         &_full
             width: 300px
+    .mobile
+        &_item
+            width: 310px
+    .footer
+        &_mobile
+            &_item
+                img
+                    width: 70px
 @media (max-width: 991px)
     .menu
         &_item
@@ -44,6 +52,9 @@
         &_full
             width: 300px
             margin-top: 20px
+    .opportunities
+        &_img
+            width: 100%
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -88,11 +99,7 @@
                 &:nth-child(2)
                     display: none
                 &:nth-child(3)
-                    transform: translateY(3px) rotate(45deg)
-    .xs-hidden   
-        display: none    
-    .xs-visible
-        display: block    
+                    transform: translateY(3px) rotate(45deg) 
     .subheader
         &_phone  
             display: block
@@ -107,14 +114,34 @@
             width: 200px
             height: 40px
             margin: 0 auto   
-            margin-top: 10px      
+            margin-top: 10px 
+        .xs-hidden   
+            display: none    
+        .xs-visible
+            display: block        
     .promo
         &_header
             line-height: 45px
     .reasons
-        &_descr
-            text-align: center    
+        &_descr   
             margin-bottom: 5px
+    .title
+        font-size: 25px
+        margin-top: 10px
+    .subtitle
+        margin-top: 5px
+    .require
+        padding: 20px 0 84px 0
+        &_block
+            margin: 10px 0
+    &_title
+        color: #1ca8c3
+        font-size: 22px
+        font-weight: 400
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 21px
 @media (max-width: 575px)
     nav
         height: 50px
@@ -146,7 +173,7 @@
             padding: 0 24px
             line-height: 35px
         &_subheader
-            font-size: 20px
+            font-size: 18px
             font-weight: 400
             margin-top: 33px
             padding: 0 10px
@@ -157,24 +184,59 @@
             margin-top: 72px
     .menu
         width: 85%
+        &_item
+            width: 100%
+            text-align: center
+        &_link
+            display: block
     .reasons
         padding: 22px 0 36px 0
-        &_block
-            margin-top: 20px
+        &_full
+            margin-top: 15px
         &_round
             width: 100px
             height: 100px
         &_descr
             width: 100%
-            margin-top: 27px
+            margin-top: 7px
+            padding-left: 10px
         &_subtitle
+            padding-left: 10px
             font-size: 16px
-
-
+        &_text
+            padding-left: 10px
     .title
         font-size: 16px
         margin-top: 15px
         line-height: 16px
+    .mobile
+        &_item
+            width: 280px
+            &_subtitle
+                font-size: 18px
+    .opportunities
+        background-image: none
+        min-height: 300px
+        padding: 48px 0 10px 0
+        &_descr
+            position: relative
+            color: #fff
+            z-index: 2
+        &_img
+            margin-top: 40px
+        .black
+            height: 100%
+        .xs-hidden
+            display: none
+    .world
+        &_background
+            min-height: 700px
+        &_link
+            line-height: 20px
+            font-size: 12px
+            bottom: 80px
+        
+
         
 
 
